@@ -14,10 +14,10 @@
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=0);
         /* IE6-9 */
-
+        margin-bottom: 10px;
     }
 
-    .bar-loader {
+    .bar-loader-blue {
         height: 100%;
         border-radius: 15px;
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+50,207cca+51,7db9e8+100;Blue+Gloss+%232 */
@@ -31,6 +31,63 @@
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b679e', endColorstr='#7db9e8', GradientType=0);
         /* IE6-9 */
+    }
+
+    .bar-loader-red {
+        height: 100%;
+        border-radius: 15px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+        background: #a90329;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a90329', endColorstr='#6d0019', GradientType=0);
+        /* IE6-9 */
+    }
+
+    .bar-loader-fire {
+        height: 100%;
+        border-radius: 15px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e2e2e2+0,dbdbdb+50,d1d1d1+51,fefefe+100;Grey+Gloss+%231 */
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff670f+0,ff670f+100;Orange+Flat+%231 */
+        background: #ff670f;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #ff670f 0%, #ff670f 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ff670f 0%, #ff670f 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ff670f 0%, #ff670f 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff670f', endColorstr='#ff670f', GradientType=0);
+        /* IE6-9 */
+
+    }
+
+    .bar-loader-green {
+        height: 100%;
+        border-radius: 15px;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cdeb8e+0,a5c956+100;Green+3D+%232 */
+        background: #cdeb8e;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #cdeb8e 0%, #a5c956 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cdeb8e', endColorstr='#a5c956', GradientType=0);
+        /* IE6-9 */
+    }
+
+    .bar-loader-stripe {
+        height: 100%;
+        border-radius: 15px;
+        background-image: linear-gradient(45deg, #14e0d2 25%, #4cbfb2 25%, #4cbfb2 50%, #14e0d2 50%, #14e0d2 75%, #4cbfb2 75%, #4cbfb2 100%);
+background-size: 56.57px 56.57px;
 
     }
 
@@ -38,5 +95,5 @@
 </style>
 
 <div class="bar-loader-container">
-    <div class="bar-loader" [style.width.%]="barPercent"></div>
+    <div class="{{theme}}" [style.width.%]="barPercent"></div>
 </div>
